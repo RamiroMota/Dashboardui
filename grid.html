@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<meta charset="utf-8">
+        <title>Grids - Documentación</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/normalize.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/frow.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/icons.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/documentation.css">
+
+        <!-- Favicons -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+    </head>
+<body>
+    <main id="temp-frow-container" class="frow-container u-bg-white ">
+        <div class="frow">
+            <div class="col-md-5-6">
+                <h3>Diseño Responsivo</h3>
+                <h4>Tamaños responsivos de Frow</h4>
+                <p>Frow usa cuatro tamaños como puntos de corte en la grid. Cada uno está diseñado para cubrir un tipo de dispositivo.</p>
+
+                <pre class="fake-code bottom-margin">
+                <code>
+    XS - ( Pantallas    0 px - 767 px  ancho ) - General Telefonos / Tablets pequeñas
+    SM - ( Pantallas  768 px - 991 px  ancho ) - General Tablets
+    MD - ( Pantallas  992 px - 1199 px ancho ) - General Computadoras / Tabletas de paisaje
+    LG - ( Pantallas 1200 px +         ancho ) - General Ordenadores con pantalla grande</code>
+                </pre>
+
+                <h4>Apilamiento de columna móvil</h4>
+
+                <p>En las pantallas XS y SM, las fracciones de la columna se tratan automáticamente como 1-1. Estas tres columnas se apilarán una encima de la otra en el móvil de forma predeterminada, sin necesidad de código adicional. Esto evita que su contenido quede demasiado comprimido en los teléfonos.</p>
+
+                <pre class="fake-code bottom-margin"><code>
+    &lt;div class="frow"&gt;
+        &lt;div class="col-md-1-3"&gt;&lt;/div&gt;<span class="fake-comment"> // col-xs-1-1 and col-sm-1-1 are assumed</span>
+        &lt;div class="col-md-1-3"&gt;&lt;/div&gt;<span class="fake-comment"> // col-xs-1-1 and col-sm-1-1 are assumed</span>
+        &lt;div class="col-md-1-3"&gt;&lt;/div&gt;<span class="fake-comment"> // col-xs-1-1 and col-sm-1-1 are assumed</span>
+    &lt;/div&gt;</code>
+                </pre>
+
+                <pre class="grid-frow-code visible-md visible-lg">
+                <span class="fake-comment">// Reducir la ventana de su navegador para ver la pila de columnas como si fueran 1-1 en lugar de 1-3</span></pre>
+
+                <pre class="grid-frow-code visible-xs visible-sm">
+                <span class="fake-comment">// Expande la ventana de tu navegador para ver que estas aparentemente 1-1 columnas aparecen como 1-3</span>
+                </pre>
+
+                <div class="grid-example">
+                    <div class="frow">
+                        <div class="col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <h4>Clases Responsivas</h4>
+                
+                <p>A las columnas también se les pueden dar fracciones .col-sm y .col-xs para anular el cambio a 1-1 en los dispositivos móviles. Por ejemplo, si desea que tres columnas permanezcan como tres columnas en los dispositivos móviles, simplemente defina las clases .col-xs y .col-md.</p>
+                
+                <pre class="fake-code"><code>
+    &lt;div class="frow"&gt;
+        &lt;div class="col-xs-1-3 col-sm-1-3 col-md-1-3"&gt;&lt;/div&gt;
+        &lt;div class="col-xs-1-3 col-sm-1-3 col-md-1-3"&gt;&lt;/div&gt;
+        &lt;div class="col-xs-1-3 col-sm-1-3 col-md-1-3"&gt;&lt;/div&gt;
+    &lt;/div&gt;</code>
+                </pre>
+                    
+                <div class="grid-example">
+                    <div class="frow">
+                        <div class="col-xs-1-3 col-sm-1-3 col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-xs-1-3 .col-sm-1-3 .col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-1-3 col-sm-1-3 col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-xs-1-3 .col-sm-1-3 .col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-xs-1-3 col-sm-1-3 col-md-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-xs-1-3 .col-sm-1-3 .col-md-1-3</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    <p>Con la configuración predeterminada de Frow, puede usar cualquier fracción de mitades a doceavas partes.</p>
+                <div class="grid-example mb-0">
+                    <div class="frow">
+                        <div class="col-md-1-1 col-sm-1-1 col-xs-1-1">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-1</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-2 col-sm-1-2 col-xs-1-2">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-2</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-2 col-sm-1-2 col-xs-1-2">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-2</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-3 col-sm-1-3 col-xs-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-3 col-sm-1-3 col-xs-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-3 col-sm-1-3 col-xs-1-3">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-3</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-4 col-sm-1-4 col-xs-1-4">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-4</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-4 col-sm-1-4 col-xs-1-4">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-4</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-4 col-sm-1-4 col-xs-1-4">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-4</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-4 col-sm-1-4 col-xs-1-4">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-4</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-5 col-sm-1-5 col-xs-1-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-5</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-5 col-sm-1-5 col-xs-1-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-5</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-5 col-sm-1-5 col-xs-1-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-5</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-5 col-sm-1-5 col-xs-1-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-5</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-5 col-sm-1-5 col-xs-1-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-5</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-6 col-sm-1-6 col-xs-1-6">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-6</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frow">
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                        <div class="col-md-1-12 col-sm-1-12 col-xs-1-12">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-1-12</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p>Después de esa cuadrícula básica, veamos dónde se destaca Frow.</p>
+
+                <p>Si las fracciones suman menos que un todo, Frow las centra. No me gusta? Una clase rápida cambia el comportamiento. Vea todas las clases disponibles en los accesos directos de Frow.</p>
+
+                <pre class="fake-code">
+                        <code>
+    &lt;div class="frow"&gt; <span class="fake-comment">// Centrar columnas horizontalmente por defecto</span></code>
+                </pre>
+
+                <div class="grid-example">
+                    <div class="frow">
+                        <div class="col-md-3-5 col-sm-3-5 col-xs-3-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-3-5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre class="grid-frow-code">
+                    <code>
+    &lt;div class="frow frow-start"&gt; <span class="fake-comment">// Cambia a la alineación típica a la izquierda</span></code>
+                </pre>
+                <div class="grid-example">
+                    <div class="frow row-start">
+                        <div class="col-md-3-5 col-sm-3-5 col-xs-3-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-3-5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <pre class="grid-frow-code">
+                    <code>
+    &lt;div class="frow row-end"&gt; <span class="fake-comment">// Cambia a la alineación a la derecha</span></code> 
+                </pre>
+
+                <div class="grid-example">
+                    <div class="frow row-end">
+                        <div class="col-md-3-5 col-sm-3-5 col-xs-3-5">
+                            <div class="grid-example-div">
+                                <p class="frow centered">.col-md-3-5</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

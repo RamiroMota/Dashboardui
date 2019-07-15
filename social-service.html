@@ -1,0 +1,502 @@
+<!doctype html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Interfaz gráfica</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/media/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/media/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/media/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/media/apple-touch-icon-114x114.png">
+        <!-- Stylesheet -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/icons/flaticon/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/icons/fontawesome/fontawesome.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="o-page">
+        <div class="o-page__sidebar js-page-sidebar">
+            <div class="c-sidebar">
+                <a class="c-sidebar__brand" href="index.html">
+                <img class="c-sidebar__brand-img u-logo-grad-white" src="assets/media/logo.svg" alt="Logo"> Intranet UPGCH
+                </a>
+                <h4 class="c-sidebar__title">General</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="index.html"><i class="fa fa-home u-mr-xsmall"></i>Inicio</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="events.html"><i class="fa fa-calendar u-mr-xsmall"></i>Eventos</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="office.html"><i class="fa fa-file-text-o u-mr-xsmall"></i>Oficios Electrónicos</a>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Servicios Escolares</h4>
+                <ul>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-escolares" aria-expanded="false" aria-controls="sidebar-submenu">
+                        <i class="fa fa-check-square-o u-mr-xsmall"></i>Control Escolar
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-escolares">
+                            <li><a class="c-sidebar__link" href="students.html">Alumnos</a></li>
+                            <li><a class="c-sidebar__link" href="ratings.html">Calificaciones</a></li>
+                            <li><a class="c-sidebar__link" href="ticket.html">Boletas</a></li>
+                            <li><a class="c-sidebar__link" href="files.html">Expedientes</a></li>
+                            <li><a class="c-sidebar__link" href="student-status.html">Seguimiento de Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-oferta" aria-expanded="false" aria-controls="sidebar-submenu">
+                        <i class="fa fa-graduation-cap u-mr-xsmall"></i>Oferta Educativa
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-oferta">
+                            <li><a class="c-sidebar__link" href="basic.html">Básica</a></li>
+                            <li><a class="c-sidebar__link" href="medium.html">Media Superior</a></li>
+                            <li><a class="c-sidebar__link" href="hight.html">Superior</a></li>
+                            <li><a class="c-sidebar__link" href="activities.html">Talleres y Diplomados</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link is-active" href="social-service.html"><i class="fa fa-handshake-o u-mr-xsmall"></i>Servicio Social</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="certification.html"><i class="fa fa-book u-mr-xsmall"></i>Titulación</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="graduated.html"><i class="fa fa-briefcase u-mr-xsmall"></i>Seguimiento a Egresados</a>
+                    </li>
+                </ul>
+                <!--
+                    <h4 class="c-sidebar__title">Servicios Financieros</h4>
+                    <ul>
+                        <li><a class="c-sidebar__link" href="cash.html"><i class="fa fa-money u-mr-xsmall"></i>Caja</a></li>
+                        <li><a class="c-sidebar__link" href="debts.html"><i class="fa fa-credit-card u-mr-xsmall"></i>Adeudos</a></li>
+                        <li><a class="c-sidebar__link" href="suppliers.html"><i class="fa fa-truck u-mr-xsmall"></i>Proveedores</a></li>
+                        <li><a class="c-sidebar__link" href="bill.html"><i class="fa fa-calculator u-mr-xsmall"></i>Facturación</a></li>
+                    </ul>-->
+                <h4 class="c-sidebar__title">Servicios Administrativos</h4>
+                <ul>
+                    <li><a class="c-sidebar__link" href="employee.html"><i class="fa fa-users u-mr-xsmall"></i>Empleados</a></li>
+                    <li><a class="c-sidebar__link" href="incidence.html"><i class="fa fa-calendar-o u-mr-xsmall"></i>Incidencias</a></li>
+                    <li><a class="c-sidebar__link" href="teachers.html"><i class="fa fa-user u-mr-xsmall"></i>Docentes</a></li>
+                    <li><a class="c-sidebar__link" href="teacher-status.html"><i class="fa fa-calendar-check-o u-mr-xsmall"></i>Seguimiento a Docentes</a></li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-pantallas" aria-expanded="false" aria-controls="sidebar-submenu">
+                        <i class="fa fa-clone u-mr-xsmall"></i>Pantallas Generales
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-pantallas">
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="404.html">
+                                <i class="fa fa-link u-mr-xsmall"></i>Error 404
+                                </a>
+                            </li>
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="under-maintenance.html">
+                                <i class="fa fa-gears u-mr-xsmall"></i>Mantenimiento
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-details.html">
+                                <i class="fa fa-user-circle u-mr-xsmall"></i>Detalle de la Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-settings.html">
+                                <i class="fa fa-cog u-mr-xsmall"></i>Configuración de Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="register.html">
+                                <i class="fa fa-user-plus u-mr-xsmall"></i>Registro
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="forgot-password.html">
+                                <i class="fa fa-lock u-mr-xsmall"></i>¿Olvidó la Contraseña?
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="reset-password.html">
+                                <i class="fa fa-refresh u-mr-xsmall"></i>Restablecer la Contraseña
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="login.html">
+                                <i class="fa fa-sign-in u-mr-xsmall"></i>Login
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/elementos_generales.html">
+                        <i class="fa fa-mouse-pointer u-mr-xsmall"></i>Visión General de la Interfaz
+                        </a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/index.html">
+                        <i class="fa fa-file-text-o u-mr-xsmall"></i>Documentación
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // .c-sidebar -->
+        </div>
+        <!-- // .o-page__sidebar -->
+        <main class="o-page__content">
+            <header class="c-navbar">
+                <button class="c-sidebar-toggle u-mr-small">
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                </button><!-- // .c-sidebar-toggle -->
+                <!--<h2 class="c-navbar__title u-mr-auto">Cuenta</h2>-->
+                <ol class="c-breadcrumb u-mr-auto">
+                    <li class="c-breadcrumb__item"><a href="index.html">Inicio</a></li>
+                    <li class="c-breadcrumb__item"><a href="#">Servicio Social</a></li>
+                </ol>
+                <div class="c-dropdown u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications.html"></div>
+                </div>
+                <div class="c-dropdown dropdown u-mr-medium u-ml-small u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-bell-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications-alerts.html"></div>
+                </div>
+                <div class="c-dropdown dropdown">
+                    <a  class="c-avatar c-avatar--xsmall has-dropdown dropdown-toggle" href="#" id="dropdwonMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="c-avatar__img" src="assets/media/equipo7.jpg" alt="User's Profile Picture">
+                    </a>
+                    <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
+                        <a class="c-dropdown__item dropdown-item" href="user-profile.html">Ver Perfil</a>
+                        <a class="c-dropdown__item dropdown-item" href="user-activity.html">Mi Actividad</a>
+                        <a class="c-dropdown__item dropdown-item" href="settings.html">Configuración</a>
+                        <a class="c-dropdown__item dropdown-item" href="login.html">Salir</a>                    
+                    </div>
+                </div>
+            </header>
+        <div class="row">
+            <div class="col-sm-12 col-xl-12">
+
+                
+            <table class="c-table u-mb-small" id="datatable">
+                <div class="c-toolbar">
+                    <h1 class="c-toolbar__title has-divider"><b>Servicio Social</b></h1>
+                    <h5 class="c-toolbar__meta u-mr-auto">8 Aspirantes </h5>
+                    <div class="c-dropdown dropdown">
+                        <button class="c-btn c-btn--info has-dropdown dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ver Todo</button>
+                        <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="c-dropdown__item dropdown-item" href="#">En Proceso</a>
+                            <a class="c-dropdown__item dropdown-item" href="#">Finalizado</a>
+                            <a class="c-dropdown__item dropdown-item" href="#">Pausado</a>
+                        </div>
+                    </div>
+                </div>
+                <thead class="c-table__head c-table__head--slim">
+                    <tr class="c-table__row">
+                        <th class="c-table__cell c-table__cell--head">Practicantes</th>
+                        <th class="c-table__cell c-table__cell--head">Numero de control</th>
+                        <th class="c-table__cell c-table__cell--head ">En Proceso</th>
+                        <th class="c-table__cell c-table__cell--head">Budget</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/Equipo5.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Ramiro Mota Pérez. 
+                                <span class="u-block u-text-mute u-text-xsmall">Lincenciatura en Derecho.</span>
+                                <span class="u-block u-text-mute u-text-xsmall">876538908</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-success u-mr-xsmall"></i>Finalizo</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo2.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Luis Fernando Gómez Del Porte.
+                                <span class="u-block u-text-mute u-text-xsmall">Ing. en Sistemas Computacionales</span>
+                                <span class="u-block u-text-mute u-text-xsmall">665352788</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-warning u-mr-xsmall"></i>En Proceso</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo3.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Jorge Adalberto Espinosa Vázquez.
+                                <span class="u-block u-text-mute u-text-xsmall">Ing en sistemas computacionales.</span>
+                                <span class="u-block u-text-mute u-text-xsmall">665352345</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-warning u-mr-xsmall"></i>En Proceso</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo6.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Karina Rodriguez Moreno.
+                                <span class="u-block u-text-mute u-text-xsmall">Lic. en Educacion Fisica y Deportiva</span>
+                                <span class="u-block u-text-mute u-text-xsmall">665344788</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-success u-mr-xsmall"></i>Finalizo</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo7.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Cecila Najera Castelllanos.
+                                <span class="u-block u-text-mute u-text-xsmall">Lic en Enfermeria.</span>
+                                <span class="u-block u-text-mute u-text-xsmall">653586288</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$3000.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-warning u-mr-xsmall"></i>En Proceso</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo1.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Kathia Itzel Gonzales Pérez.
+                                <span class="u-block u-text-mute u-text-xsmall">Ing Mecatronica en Computación</span>
+                                <span class="u-block u-text-mute u-text-xsmall">665352788</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-success u-mr-xsmall"></i>Finalizo</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo9.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Josue Toledo Gómez.
+                                <span class="u-block u-text-mute u-text-xsmall">Ing. Electronica en computación</span>
+                                <span class="u-block u-text-mute u-text-xsmall">666542788</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2250.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-warning u-mr-xsmall"></i>En Proceso</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr class="c-table__row">
+                        <td class="c-table__cell c-table__cell--img o-media">
+                            <div class="o-media__img u-mr-xsmall">
+                                <img src="assets/media/equipo4.jpg" style="width:56px; border-radius: 10px;" alt="Confide's App Icon">
+                            </div>
+                            <div class="o-media__body">Josefina Coronel Escobar.
+                                <span class="u-block u-text-mute u-text-xsmall">Contabilidad</span>
+                                <span class="u-block u-text-mute u-text-xsmall">665358748</span>
+                            </div>
+                        </td>
+                        <td class="c-table__cell">$2200.00 
+                            <span class="u-block u-text-mute u-text-xsmall"></span>
+                        </td>
+                        <td class="c-table__cell">
+                            <i class="fa fa-circle-o u-color-warning u-mr-xsmall"></i>En Proceso</span>
+                        </td>
+                        <td class="c-table__cell">
+                            <ul class="u-flex u-justify-between">
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-pause-circle-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-share-square-o"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-repeat"></i></a>
+                                </li>
+                                <li class="u-text-large">
+                                    <a class="u-text-mute" href="#"><i class="fa fa-bar-chart"></i></a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            </div>
+        </div>
+                
+            
+            <!-- // .container -->
+        </main>
+        <!-- // .o-page__content -->
+        <!-- Main javascsript -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/w3.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
+</html>

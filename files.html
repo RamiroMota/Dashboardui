@@ -1,0 +1,560 @@
+
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Interfaz gráfica - Intranet UPGCH</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/media/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/media/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/media/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/media/apple-touch-icon-114x114.png">
+        <!-- Stylesheet -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/icons/flaticon/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/icons/fontawesome/fontawesome.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="o-page">
+        <div class="o-page__sidebar js-page-sidebar">
+            <div class="c-sidebar">
+                <a class="c-sidebar__brand" href="index.html">
+                <img class="c-sidebar__brand-img u-logo-grad-white" src="assets/media/logo.svg" alt="Logo"> Intranet UPGCH
+                </a>
+                <h4 class="c-sidebar__title">General</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="index.html"><i class="fa fa-home u-mr-xsmall"></i>Inicio</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link is-active" href="events.html"><i class="fa fa-calendar u-mr-xsmall"></i>Eventos</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="office.html"><i class="fa fa-file-text-o u-mr-xsmall"></i>Oficios Electrónicos</a>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Servicios Escolares</h4>
+                <ul>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-escolares" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-check-square-o u-mr-xsmall"></i>Control Escolar
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-escolares">
+                            <li><a class="c-sidebar__link" href="students.html">Alumnos</a></li>
+                            <li><a class="c-sidebar__link" href="ratings.html">Calificaciones</a></li>
+                            <li><a class="c-sidebar__link" href="ticket.html">Boletas</a></li>
+                            <li><a class="c-sidebar__link" href="files.html">Expedientes</a></li>
+                            <li><a class="c-sidebar__link" href="student-status.html">Seguimiento de Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-oferta" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-graduation-cap u-mr-xsmall"></i>Oferta Educativa
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-oferta">
+                            <li><a class="c-sidebar__link" href="basic.html">Básica</a></li>
+                            <li><a class="c-sidebar__link" href="medium.html">Media Superior</a></li>
+                            <li><a class="c-sidebar__link" href="hight.html">Superior</a></li>
+                            <li><a class="c-sidebar__link" href="activities.html">Talleres y Diplomados</a></li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="social-service.html"><i class="fa fa-handshake-o u-mr-xsmall"></i>Servicio Social</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="certification.html"><i class="fa fa-book u-mr-xsmall"></i>Titulación</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="graduated.html"><i class="fa fa-briefcase u-mr-xsmall"></i>Seguimiento a Egresados</a>
+                    </li>
+                </ul>
+                <!--
+                <h4 class="c-sidebar__title">Servicios Financieros</h4>
+                <ul>
+                    <li><a class="c-sidebar__link" href="cash.html"><i class="fa fa-money u-mr-xsmall"></i>Caja</a></li>
+                    <li><a class="c-sidebar__link" href="debts.html"><i class="fa fa-credit-card u-mr-xsmall"></i>Adeudos</a></li>
+                    <li><a class="c-sidebar__link" href="suppliers.html"><i class="fa fa-truck u-mr-xsmall"></i>Proveedores</a></li>
+                    <li><a class="c-sidebar__link" href="bill.html"><i class="fa fa-calculator u-mr-xsmall"></i>Facturación</a></li>
+                </ul>-->
+                <h4 class="c-sidebar__title">Servicios Administrativos</h4>
+                <ul>
+                    <li><a class="c-sidebar__link" href="employee.html"><i class="fa fa-users u-mr-xsmall"></i>Empleados</a></li>
+                    <li><a class="c-sidebar__link" href="incidence.html"><i class="fa fa-calendar-o u-mr-xsmall"></i>Incidencias</a></li>
+                    <li><a class="c-sidebar__link" href="teachers.html"><i class="fa fa-user u-mr-xsmall"></i>Docentes</a></li>
+                    <li><a class="c-sidebar__link" href="teacher-status.html"><i class="fa fa-calendar-check-o u-mr-xsmall"></i>Seguimiento a Docentes</a></li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-pantallas" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-clone u-mr-xsmall"></i>Pantallas Generales
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-pantallas">
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="404.html">
+                                    <i class="fa fa-link u-mr-xsmall"></i>Error 404
+                                </a>
+                            </li>
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="under-maintenance.html">
+                                    <i class="fa fa-gears u-mr-xsmall"></i>Mantenimiento
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-details.html">
+                                    <i class="fa fa-user-circle u-mr-xsmall"></i>Detalle de la Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-settings.html">
+                                    <i class="fa fa-cog u-mr-xsmall"></i>Configuración de Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="register.html">
+                                    <i class="fa fa-user-plus u-mr-xsmall"></i>Registro
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="forgot-password.html">
+                                    <i class="fa fa-lock u-mr-xsmall"></i>¿Olvidó la Contraseña?
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="reset-password.html">
+                                    <i class="fa fa-refresh u-mr-xsmall"></i>Restablecer la Contraseña
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="login.html">
+                                    <i class="fa fa-sign-in u-mr-xsmall"></i>Login
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/elementos_generales.html">
+                        <i class="fa fa-mouse-pointer u-mr-xsmall"></i>Visión General de la Interfaz
+                        </a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/index.html">
+                        <i class="fa fa-file-text-o u-mr-xsmall"></i>Documentación
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // .c-sidebar -->
+        </div>
+        <!-- // .o-page__sidebar -->
+        <main class="o-page__content">
+            <header class="c-navbar">
+                <button class="c-sidebar-toggle u-mr-small">
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                </button><!-- // .c-sidebar-toggle -->
+                <!--<h2 class="c-navbar__title u-mr-auto">Cuenta</h2>-->
+                <ol class="c-breadcrumb u-mr-auto">
+                    <li class="c-breadcrumb__item"><a href="index.html">Inicio</a></li>
+                    <li class="c-breadcrumb__item"><a href="#">Expedientes</a></li>
+                </ol>
+                <div class="c-dropdown u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications.html"></div>
+                </div>
+                <div class="c-dropdown dropdown u-mr-medium u-ml-small u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-bell-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications-alerts.html"></div>
+                </div>
+                <div class="c-dropdown dropdown">
+                    <a  class="c-avatar c-avatar--xsmall has-dropdown dropdown-toggle" href="#" id="dropdwonMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="c-avatar__img" src="assets/media/equipo7.jpg" alt="User's Profile Picture">
+                    </a>
+                    <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
+                        <a class="c-dropdown__item dropdown-item" href="user-profile.html">Ver Perfil</a>
+                        <a class="c-dropdown__item dropdown-item" href="user-activity.html">Mi Actividad</a>
+                        <a class="c-dropdown__item dropdown-item" href="settings.html">Configuración</a>
+                        <a class="c-dropdown__item dropdown-item" href="login.html">Salir</a>                   
+                    </div>
+                </div>
+            </header>
+            <div class="c-toolbar u-mb-medium">
+            <h3 class="c-toolbar__title has-divider">Expedientes</h3>
+            <h5 class="c-toolbar__meta u-mr-auto">136 Resultados</h5>
+
+            <div class="c-field c-field--inline has-icon-right u-mr-small u-hidden-down@desktop">
+                <input class="c-input" type="text" placeholder="Buscar">
+                <span class="c-field__icon">
+                    <i class="fa fa-search"></i>
+                </span>
+            </div>
+            
+            <a class="c-btn c-btn--success" href="#">
+                <i class="fa fa-plus u-text-small u-opacity-medium u-mr-xsmall"></i>Nuevo Expediente
+            </a>
+        </div><!-- // .c-toolbar -->
+            <div class="container-fluid">
+                <!--[if lte IE 9]>
+                <div class="row">
+                    <div class="col u-mb-small">
+                        <p class="browserupgrade">Estás usando una version <strong>desactualizada</strong> de navegador. Porfavor <a href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar la experiencia y seguridad.</p>
+                    </div>
+                </div>
+                <![endif]-->
+              
+                    <!-- // .col-md-3 -->
+                </div>
+                <!-- // .row -->
+              <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-12 col-xl-12">
+                    <main>
+                 
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <div class="c-table-responsive@tablet">
+                                    <table class="c-table">
+                                <caption class="c-table__title">
+                                    Expediente
+                                </caption>
+                                <thead class="c-table__head c-table__head--slim">
+                                    <tr class="c-table__row">
+                                        <th class="c-table__cell c-table__cell--head">No.</th>
+                                        <th class="c-table__cell c-table__cell--head">Invoice Subject</th>
+                                        <th class="c-table__cell c-table__cell--head">Client</th>
+                                        <th class="c-table__cell c-table__cell--head">VAT No.</th>
+                                        <th class="c-table__cell c-table__cell--head">Created</th>
+                                        <th class="c-table__cell c-table__cell--head">Status</th>
+                                        <th class="c-table__cell c-table__cell--head">Price</th>
+                                        <th class="c-table__cell c-table__cell--head">
+                                            <span class="u-hidden-visually">Actions</span>
+                                        </th>
+                                        <th class="c-table__cell c-table__cell--head">
+                                            <span class="u-hidden-visually">Download</span>
+                                        </th>
+                                    </tr>
+                                </thead>
+
+                                <tbody>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Design Works</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Carlson Limited</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">15 Dec 2017</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--success">Paid</span>
+                                        </td>
+                                        <td class="c-table__cell">$887</td>
+
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton10" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton10">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">UX Wireframes</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Adobe</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956421</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">12 Apr 2017</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--warning">Pending</span>
+                                        </td>
+                                        <td class="c-table__cell">$1200</td>
+                                        <td class="c-table__cell  u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton20" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton20">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00452</span></td>
+                                        <td class="c-table__cell">New Dashboard</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Bluewolf</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87952621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">23 Oct 2017</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--warning">Pending</span>
+                                        </td>
+                                        <td class="c-table__cell">$534</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton30" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton30">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Landing Page</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Salesforce</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87953421</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">2 Sep 2017</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--secondary">Due in 2 Weeks</span>
+                                        </td>
+                                        <td class="c-table__cell">$1500</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton40" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton40">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Marketing Templates</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Printic</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">29 Jan 2018</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--danger">Paid Today</span>
+                                        </td>
+                                        <td class="c-table__cell">$648</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton50" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton50">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Sales Presentation</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Tabdaq</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">4 Feb 2018</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--secondary">Due in 3 Weeks</span>
+                                        </td>
+                                        <td class="c-table__cell">$300</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton60" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton60">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Logo & Print</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Apple</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">22 Mar 2018</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--success">Paid Today</span>
+                                        </td>
+                                        <td class="c-table__cell">$2500</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton70" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton70">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell"><span class="u-text-mute">00450</span></td>
+                                        <td class="c-table__cell">Icons</td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">Tookapic</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">87956621</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="u-text-mute">13 May 2018</span>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <span class="c-badge c-badge--small c-badge--success">Paid Today</span>
+                                        </td>
+                                        <td class="c-table__cell">$940</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <a href="invoice.html" class="c-btn c-btn--info u-mr-xsmall">Manage</a>
+                                            <div class="c-dropdown dropdown">
+                                                <button class="c-btn c-btn--secondary has-dropdown dropdown-toggle" id="dropdownMenuButton80" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actions</button>
+                                                
+                                                <div class="c-dropdown__menu dropdown-menu" aria-labelledby="dropdownMenuButton80">
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Complete</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Share</a>
+                                                    <a class="c-dropdown__item dropdown-item" href="#">Archive</a>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">
+                                            <a class="u-text-mute" href="invoice.html">
+                                                <i class="fa fa-cloud-download"></i>
+                                            </a>
+                                        </td>
+                                    </tr><!-- // .table__row -->
+                                </tbody>
+                            </table>
+                                </div>
+                            </div>
+                        </div>
+                    </main>
+                </div>
+            </div>
+        </div>
+               
+
+        
+                <!-- // .row -->
+            </div>
+            <!-- // .container -->
+        </main>
+        <!-- // .o-page__content -->
+        <!-- Main javascsript -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/w3.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
+</html>

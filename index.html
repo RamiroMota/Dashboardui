@@ -1,0 +1,571 @@
+<!doctype html>
+<html lang="es-MX">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Interfaz gráfica</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="assets/media/favicon.ico">
+        <link rel="apple-touch-icon" href="assets/media/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="assets/media/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="assets/media/apple-touch-icon-114x114.png">
+        <!-- Stylesheet -->
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/icons/flaticon/icons.css" rel="stylesheet" type="text/css">
+        <link href="assets/icons/fontawesome/fontawesome.css" rel="stylesheet" type="text/css">
+    </head>
+    <body class="o-page">
+        <div class="o-page__sidebar js-page-sidebar">
+            <div class="c-sidebar">
+                <a class="c-sidebar__brand" href="index.html">
+                <img class="c-sidebar__brand-img u-logo-grad-white" src="assets/media/logo.svg" alt="Logo"> Intranet UPGCH
+                </a>
+                <h4 class="c-sidebar__title">General</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link is-active" href="index.html"><i class="fa fa-home u-mr-xsmall"></i>Inicio</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="events.html"><i class="fa fa-calendar u-mr-xsmall"></i>Eventos</a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" href="office.html"><i class="fa fa-file-text-o u-mr-xsmall"></i>Oficios Electrónicos</a>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Servicios Escolares</h4>
+                <ul>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-escolares" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-check-square-o u-mr-xsmall"></i>Control Escolar
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-escolares">
+                            <li><a class="c-sidebar__link" href="students.html">Alumnos</a></li>
+                            <li><a class="c-sidebar__link" href="ratings.html">Calificaciones</a></li>
+                            <li><a class="c-sidebar__link" href="ticket.html">Boletas</a></li>
+                            <li><a class="c-sidebar__link" href="files.html">Expedientes</a></li>
+                            <li><a class="c-sidebar__link" href="student-status.html">Seguimiento de Alumnos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="social-service.html"><i class="fa fa-handshake-o u-mr-xsmall"></i>Servicio Social</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="certification.html"><i class="fa fa-book u-mr-xsmall"></i>Titulación</a>
+                    </li>
+                    <li>
+                        <a class="c-sidebar__link" href="graduated.html"><i class="fa fa-briefcase u-mr-xsmall"></i>Seguimiento a Egresados</a>
+                    </li>
+                </ul>
+
+                <h4 class="c-sidebar__title">Oferta Educativa</h4>
+                <ul>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-basica" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-pencil u-mr-xsmall"></i>Básica
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-basica">
+                            <li><a class="c-sidebar__link" href="students.html">Maternal</a></li>
+                            <li><a class="c-sidebar__link" href="students.html">Preescolar</a></li>
+                            <li><a class="c-sidebar__link" href="ratings.html">Primaria</a></li>
+                        </ul>
+                    </li>
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-media-sup" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-graduation-cap u-mr-xsmall"></i>Media Superior
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-media-sup">
+                            <li><a class="c-sidebar__link" href="ticket.html">Secundaria</a></li>
+                            <li><a class="c-sidebar__link" href="basic.html">Preparatoria</a></li>
+                        </ul>
+                    </li>
+                     <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-superior" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-university u-mr-xsmall"></i>superior
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-superior">
+                            <li class="c-sidebar__item has-submenu"><a class="c-sidebar__link">Licenciatura</a>
+                                <ul class="c-sidebar__submenu collapse" id="sidebar-superior">
+                                    <li><a class="c-sidebar__link" href="ticket.html">Secundaria</a></li>
+                                    <li><a class="c-sidebar__link" href="basic.html">Preparatoria</a></li>
+                                </ul>
+                            </li>
+                            <li><a class="c-sidebar__link" href="ratings.html">Especialidad</a></li>
+                            <li><a class="c-sidebar__link" href="ticket.html">Maestria</a></li>
+                            <a class="c-sidebar__link" href="ticket.html">Doctorado</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <!--
+                <h4 class="c-sidebar__title">Servicios Financieros</h4>
+                <ul>
+                    <li><a class="c-sidebar__link" href="cash.html"><i class="fa fa-money u-mr-xsmall"></i>Caja</a></li>
+                    <li><a class="c-sidebar__link" href="debts.html"><i class="fa fa-credit-card u-mr-xsmall"></i>Adeudos</a></li>
+                    <li><a class="c-sidebar__link" href="suppliers.html"><i class="fa fa-truck u-mr-xsmall"></i>Proveedores</a></li>
+                    <li><a class="c-sidebar__link" href="bill.html"><i class="fa fa-calculator u-mr-xsmall"></i>Facturación</a></li>
+                </ul>-->
+                <h4 class="c-sidebar__title">Servicios Administrativos</h4>
+                <ul>
+                    <li><a class="c-sidebar__link" href="employee.html"><i class="fa fa-users u-mr-xsmall"></i>Empleados</a></li>
+                    <li><a class="c-sidebar__link" href="incidence.html"><i class="fa fa-calendar-o u-mr-xsmall"></i>Incidencias</a></li>
+                    <li><a class="c-sidebar__link" href="teachers.html"><i class="fa fa-user u-mr-xsmall"></i>Docentes</a></li>
+                    <li><a class="c-sidebar__link" href="teacher-status.html"><i class="fa fa-calendar-check-o u-mr-xsmall"></i>Seguimiento a Docentes</a></li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item has-submenu">
+                        <a class="c-sidebar__link" data-toggle="collapse" href="#sidebar-pantallas" aria-expanded="false" aria-controls="sidebar-submenu">
+                            <i class="fa fa-clone u-mr-xsmall"></i>Pantallas Generales
+                        </a>
+                        <ul class="c-sidebar__submenu collapse" id="sidebar-pantallas">
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="404.html">
+                                    <i class="fa fa-link u-mr-xsmall"></i>Error 404
+                                </a>
+                            </li>
+                            <li>
+                                <a class="c-sidebar__link" target="_blank" href="under-maintenance.html">
+                                    <i class="fa fa-gears u-mr-xsmall"></i>Mantenimiento
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-details.html">
+                                    <i class="fa fa-user-circle u-mr-xsmall"></i>Detalle de la Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="account-settings.html">
+                                    <i class="fa fa-cog u-mr-xsmall"></i>Configuración de Cuenta
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="register.html">
+                                    <i class="fa fa-user-plus u-mr-xsmall"></i>Registro
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="forgot-password.html">
+                                    <i class="fa fa-lock u-mr-xsmall"></i>¿Olvidó la Contraseña?
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="reset-password.html">
+                                    <i class="fa fa-refresh u-mr-xsmall"></i>Restablecer la Contraseña
+                                </a>
+                            </li>
+                            <li class="c-sidebar__item">
+                                <a class="c-sidebar__link" target="_blank" href="login.html">
+                                    <i class="fa fa-sign-in u-mr-xsmall"></i>Login
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h4 class="c-sidebar__title">Interfaz de Usuario</h4>
+                <ul class="c-sidebar__list">
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/elementos_generales.html">
+                        <i class="fa fa-mouse-pointer u-mr-xsmall"></i>Visión General de la Interfaz
+                        </a>
+                    </li>
+                    <li class="c-sidebar__item">
+                        <a class="c-sidebar__link" target="_blank" href="docs/index.html">
+                        <i class="fa fa-file-text-o u-mr-xsmall"></i>Documentación
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- // .c-sidebar -->
+        </div>
+        <!-- // .o-page__sidebar -->
+        <main class="o-page__content">
+            <header class="c-navbar">
+                <button class="c-sidebar-toggle u-mr-small">
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                <span class="c-sidebar-toggle__bar"></span>
+                </button><!-- // .c-sidebar-toggle -->
+                <!--<h2 class="c-navbar__title u-mr-auto">Cuenta</h2>-->
+                <ol class="c-breadcrumb u-mr-auto">
+                    <li class="c-breadcrumb__item"><a href="#">Inicio</a></li>
+                </ol>
+                <div class="c-dropdown u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuUser" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-envelope-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications.html"></div>
+                </div>
+                <div class="c-dropdown dropdown u-mr-medium u-ml-small u-hidden-down@mobile">
+                    <a class="c-notification dropdown-toggle" href="#" id="dropdownMenuAlerts" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="c-notification__icon">
+                    <i class="fa fa-bell-o"></i>
+                    </span>
+                    <span class="c-notification__number">3</span>
+                    </a>
+                    <div w3-include-html="c-notifications-alerts.html"></div>
+                </div>
+                <div class="c-dropdown dropdown">
+                    <a  class="c-avatar c-avatar--xsmall has-dropdown dropdown-toggle" href="#" id="dropdwonMenuAvatar" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img class="c-avatar__img" src="assets/media/equipo7.jpg" alt="User's Profile Picture">
+                    </a>
+                    <div class="c-dropdown__menu dropdown-menu dropdown-menu-right" aria-labelledby="dropdwonMenuAvatar">
+                        <a class="c-dropdown__item dropdown-item" href="user-profile.html">Ver Perfil</a>
+                        <a class="c-dropdown__item dropdown-item" href="user-activity.html">Mi Actividad</a>
+                        <a class="c-dropdown__item dropdown-item" href="settings.html">Configuración</a>
+                        <a class="c-dropdown__item dropdown-item" href="login.html">Salir</a>                    
+                    </div>
+                </div>
+            </header>
+            <div class="c-toolbar u-justify-center u-mb-small">
+                <div class="col-12 col-lg-10 col-xl-8">
+                    <div class="row">
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">3309</h4>
+                            <span class="c-toolbar__state-title">Alumnos</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">2039</h4>
+                            <span class="c-toolbar__state-title">Oficios</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">242</h4>
+                            <span class="c-toolbar__state-title">Empleados</span>
+                        </div>
+                        <div class="col-6 col-md-3 c-toolbar__state">
+                            <h4 class="c-toolbar__state-number">447</h4>
+                            <span class="c-toolbar__state-title">Docentes</span>
+                        </div>
+                    </div><!-- // .row -->
+                </div><!-- // -->
+            </div><!-- // .c-toolbar -->
+            <div class="container">
+                <!--[if lte IE 9]>
+                <div class="row">
+                    <div class="col u-mb-small">
+                        <p class="browserupgrade">Estás usando una version <strong>desactualizada</strong> de navegador. Porfavor <a href="http://browsehappy.com/">actualiza tu navegador</a> para mejorar la experiencia y seguridad.</p>
+                    </div>
+                </div>
+                <![endif]-->
+               
+                <span class="c-divider has-text u-mt-medium u-mb-medium">Accesos directos</span>
+                <div class="row">
+                    <div class="col-sm-12 col-lg-6 col-xl-3">
+                        <div class="c-state">
+                            <h3 class="c-state__title">Colegiaturas</h3>
+                            <h4 class="c-state__number">194</h4>
+                            <p class="c-state__status">54% Cubierto</p>
+                            <span class="c-state__indicator">
+                                <i class="fa fa-arrow-circle-o-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- // .col-md-3 -->
+                    <div class="col-sm-12 col-lg-6 col-xl-3">
+                         <div class="c-state c-state--success">
+                            <h3 class="c-state__title">Mantenimiento</h3>
+                            <h4 class="c-state__number">94</h4>
+                            <p class="c-state__status">13% Más</p>
+                            <span class="c-state__indicator">
+                                <i class="fa fa-arrow-circle-o-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- // .col-md-3 -->
+                    <div class="col-sm-12 col-lg-6 col-xl-3">
+                        <div class="c-state c-state--warning">
+                            <h3 class="c-state__title">New Projects</h3>
+                            <h4 class="c-state__number">94</h4>
+                            <p class="c-state__status">13% Increase</p>
+                            <span class="c-state__indicator">
+                                <i class="fa fa-arrow-circle-o-down"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- // .col-md-3 -->
+                    <div class="col-sm-12 col-lg-6 col-xl-3">
+                        <div class="c-state c-state--danger">
+                            <h3 class="c-state__title">New Projects</h3>
+                            <h4 class="c-state__number">94</h4>
+                            <p class="c-state__status">13% Increase</p>
+                            <span class="c-state__indicator">
+                                <i class="fa fa-arrow-circle-o-down"></i>
+                            </span>
+                        </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-3 -->
+                </div>
+                <!-- // .row -->
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="c-card u-mb-medium">
+                            <!-- A simple workaround to customize fullcalendar's header -->
+                            <div class="fc-header">
+                                <h2 class="fc-header-title">Todos los Eventos</h2>
+                            </div>
+                            <div class="js-calendar u-mb-large"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xl-4">
+                        <!-- Cards below rely on utilities (u-) as they are highly customizable -->
+                        <div class="c-card u-p-medium u-mb-small">
+                            <h4 class="u-h5">Productividad</h4>
+                            <p class="u-text-small u-text-mute u-mb-small">Porcentaje de eficiencia está en un  <strong class="u-text-bold"> 80%</strong> con un indice de <strong class="u-text-bold">4.85</strong></p>
+                            <div class="o-line u-mb-small">
+                                <p class="u-text-small u-mr-small">Mantenimiento</p>
+                                <div class="c-progress c-progress--success c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:72%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">72%</div>
+                            </div>
+                            <div class="o-line u-mb-small">
+                                <p class="u-text-small u-mr-small">Calificaciones</p>
+                                <div class="c-progress c-progress--fancy c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:42.6%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">42.6%</div>
+                            </div>
+                            <div class="o-line u-mb-small">
+                                <p class="u-text-small u-mr-small">Becas</p>
+                                <div class="c-progress c-progress--info c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:89.2%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">89.2%</div>
+                            </div>
+                            <div class="o-line">
+                                <p class="u-text-small u-mr-small">Colegiaturas</p>
+                                <div class="c-progress c-progress--success c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:59.2%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">59.2%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <div class="c-graph-card" data-mh="graph-cards" style="height: 299px;">
+                            <div class="c-graph-card__content">
+                                <h3 class="c-graph-card__title">Colegiaturas del periodo</h3>
+                                <p class="c-graph-card__date">con fecha de 1 Feb 2018 al 28 Feb 2018</p>
+                                <h4 class="c-graph-card__number">$5'190,290</h4>
+                                <p class="c-graph-card__status">Hasta ayer se han cobrado 45%</p>
+                            </div>
+                            
+                            <div class="c-graph-card__chart"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                                <canvas id="js-chart-payout" width="251" height="61" class="chartjs-render-monitor" style="display: block; width: 251px; height: 61px;"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4">
+                        <!-- Cards below rely on utilities (u-) as they are highly customizable -->
+                        <div class="c-card u-p-medium u-mb-small">
+                            <h4 class="u-h5">Carreras</h4>
+                            <p class="u-text-small u-text-mute u-mb-small">Actualmente tiene una ocupación del <strong class="u-text-bold">87%</strong> del total de alumnos en la institución</p>
+                            <div class="o-line u-mb-small">
+                                <p class="u-text-small u-mr-small">Básica</p>
+                                <div class="c-progress c-progress--success c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:92%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">92%</div>
+                            </div>
+                            <div class="o-line u-mb-small">
+                                <p class="u-text-small u-mr-small">Media Superior</p>
+                                <div class="c-progress c-progress--fancy c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:87.6%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">87.6%</div>
+                            </div>
+                            <div class="o-line">
+                                <p class="u-text-small u-mr-small">Superior</p>
+                                <div class="c-progress c-progress--info c-progress--small u-mb-zero">
+                                    <div class="c-progress__bar" style="width:66.2%;"></div>
+                                </div>
+                                <div class="u-text-small u-text-mute u-ml-small">66.2%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- // .row -->
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="c-card c-card--responsive u-mb-medium">
+                            <div class="c-card__header c-card__header--transparent o-line">
+                                <h5 class="c-card__title">Oficios Recientes</h5>
+                                <div class="c-card__meta">
+                                    <a href="office.html">Ver todo</a>
+                                </div>
+                            </div>
+                            <table class="c-table u-border-zero">
+                                <tbody>
+                                    <tr class="c-table__row u-border-top-zero">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo1.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Minnie Ferguson</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">One Page Dashboard</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo2.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Ann Hunter</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo3.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Wedding</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo4.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Caleb Castillo</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">One-Pager for iOS App</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="c-card c-card--responsive u-mb-medium">
+                            <div class="c-card__header c-card__header--transparent o-line">
+                                <h5 class="c-card__title">Solicitud de Auditorio</h5>
+                                <a class="c-card__meta" href="events.html">Ver todo</a>
+                            </div>
+                            <table class="c-table u-border-zero">
+                                <tbody>
+                                    <tr class="c-table__row u-border-top-zero">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo5.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Minnie Ferguson</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo6.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Minnie Ferguson</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo7.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Minnie Ferguson</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                    <tr class="c-table__row">
+                                        <td class="c-table__cell">
+                                            <div class="u-flex u-align-items-center">
+                                                <div class="c-avatar c-avatar--xsmall u-mr-xsmall">
+                                                    <img class="c-avatar__img" src="assets/media/equipo1.jpg" alt="Adam's face">
+                                                </div>
+                                                <span class="u-text-bold">Minnie Ferguson</span>
+                                            </div>
+                                        </td>
+                                        <td class="c-table__cell">New Website</td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-bold">$150</span>
+                                        </td>
+                                        <td class="c-table__cell u-text-right">
+                                            <span class="u-text-mute">3 Days ago</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <!-- // .row -->
+            </div>
+            <!-- // .container -->
+        </main>
+        <!-- // .o-page__content -->
+        <!-- Main javascsript -->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/w3.js"></script>
+        <script>
+            w3.includeHTML();
+        </script>
+    </body>
+</html>
